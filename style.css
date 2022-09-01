@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: url("./assets/hamham.jpg");
 }
 
 textarea {
@@ -15,17 +16,23 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background:#06afd5a2;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-  /* padding: 0; */
+  /* background-position: center; */
+}
+
+.lead {
+  font-weight: 600;
+  font-size: 25px;
 }
 
 .description {
   white-space: pre-wrap;
 }
 
+#saveAlert,
 .time-block {
   text-align: center;
   border-radius: 15px;

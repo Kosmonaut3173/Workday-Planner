@@ -9,9 +9,13 @@ $(document).ready(function() {
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
+
         //sets values in local storage
         localStorage.setItem(time, text);
+        $('#saveAlert').text('Saved to Local Storage ✔️');
     })
+
+
 
     //gets values from localstorage and loads them on the screen
     $("#hr09 .description").val(localStorage.getItem("hr09"));
@@ -48,5 +52,6 @@ $(document).ready(function() {
             }
         })
     }
+
     hourTracker();
 })
