@@ -7,14 +7,14 @@ function displayTime() {
 }
 
 $(document).ready(function() {
-    // save button click listener for user input. want time and text
+    //save button click listener for user input. want time and text
     $(".saveBtn").on("click", function() {
-        // get values
+        //get values
         console.log(this);
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
-        // sets values in local storage
+        //sets values in local storage
         localStorage.setItem(time, text);
     })
 
@@ -29,8 +29,32 @@ $(document).ready(function() {
     $("#hr4 .description").val(localStorage.getItem("hr4"));
     $("#hr5 .description").val(localStorage.getItem("hr5"));
 
-    
+    //color coding hrs
+    function hourTracker() {
+        //get current time
+        var currentHour = moment().hour();
 
+        $(".time-block").each(function() {
+            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+            console.log(blockHour, currentHour)
+
+            //link to css past, pressent, future classes
+            if (blockHour < currentHour) {
+                $(this).addClass("past");
+                $(this).removeClass("present");
+                $(this).removeClass("future");
+            } else if (blockHour === currentHour) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+                $(this).removeClass("future");
+            } else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+            }
+        })
+    }
+    hourTracker();
 })
 
 
