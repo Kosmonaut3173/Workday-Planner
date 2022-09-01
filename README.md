@@ -20,7 +20,7 @@ Actions:
   <figcaption>Planner at 3pm after saving a an appointment</figcaption>
 </figure>
 
-<a href="https://kosmonaut3173.github.io/Workday-Planner/" target="_blank">LINK TO PLANNER</a>
+<a href = "https://kosmonaut3173.github.io/Workday-Planner/" target = "_blank">LINK TO PLANNER</a>
 
 ## Credits
 
