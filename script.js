@@ -1,3 +1,4 @@
+
 var timer = 3
 function clearAlert() {
     var alertTime = setInterval(function() {
@@ -12,7 +13,9 @@ function clearAlert() {
 
 $(document).ready(function() {
     // function to display the date and time at the top
+    setInterval(function() {
     $("#currentDay").text(moment().format("MMMM DD YYYY, h:mm:ss a"));
+    }, 100)
 
     //save button click listener for user input. want time and text
     $(".saveBtn").on("click", function() {
