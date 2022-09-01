@@ -1,10 +1,10 @@
-
+//set a timmer so save alert goes away after 3 seconds
 var timer = 3
 function clearAlert() {
     var alertTime = setInterval(function() {
         timer--;
         if (timer === 0){
-            $('#saveAlert').text('')
+            $('#saveAlert').text('❤️')
             clearInterval(alertTime)
             timer = 3
         }
