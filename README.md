@@ -1,6 +1,6 @@
 # Workday Planner
 
-## 05 Project Trackere
+## 05 Project Tracker
 
 GOAL: Use jQuery Bootstrap, and Moment, and Google Fonts to create a planner that features dynamically updated HTML and CSS.
 
@@ -15,12 +15,12 @@ Actions:
 
 ## DEMO
 
-<a href="#" target="_blank">PAGE LINK HERE</a>
-
 <figure>
   <img src="./assets/planner-screenshot.png" alt="planner at 3 o'clock">
   <figcaption>Planner at 3pm after saving a an appointment</figcaption>
 </figure>
+
+<a href="[#](https://kosmonaut3173.github.io/Workday-Planner/)" target="_blank">LINK TO PLANNER</a>
 
 ## Credits
 
