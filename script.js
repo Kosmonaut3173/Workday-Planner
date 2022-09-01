@@ -1,13 +1,6 @@
-// function to display the date and time at the top
-var timeDisplayEl = $('#currentDay');
-
-function displayTime() {
-    var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
-    timeDisplayEl.text(rightNow);
-}
-setInterval(displayTime, 1000);
-
 $(document).ready(function() {
+    // function to display the date and time at the top
+    $("#currentDay").text(moment().format("MMMM DD YYYY, h:mm:ss a"));
 
     //save button click listener for user input. want time and text
     $(".saveBtn").on("click", function() {
