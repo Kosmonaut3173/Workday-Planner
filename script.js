@@ -1,3 +1,15 @@
+var timer = 3
+function clearAlert() {
+    var alertTime = setInterval(function() {
+        timer--;
+        if (timer === 0){
+            $('#saveAlert').text('')
+            clearInterval(alertTime)
+            timer = 3
+        }
+    }, 1000)
+}
+
 $(document).ready(function() {
     // function to display the date and time at the top
     $("#currentDay").text(moment().format("MMMM DD YYYY, h:mm:ss a"));
@@ -12,10 +24,9 @@ $(document).ready(function() {
 
         //sets values in local storage
         localStorage.setItem(time, text);
-        $('#saveAlert').text('Saved to Local Storage ✔️');
+        $('#saveAlert').text('❤️ Saved to localStorage ❤️');
+        clearAlert()
     })
-
-
 
     //gets values from localstorage and loads them on the screen
     $("#hr09 .description").val(localStorage.getItem("hr09"));

@@ -16,7 +16,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background:#06afd5a2;
+  background:#06afd5d1;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -25,7 +25,7 @@ textarea {
 
 .lead {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .description {
